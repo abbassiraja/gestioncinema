@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row" id="cinema">
+<div class="  col-md-3 card" style="width:100px; ">
+  <img src="{{asset('images/salle1.jpg')}}" class="card-img-top" alt="" style="height: 200px; ">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="  col-md-3 offset-md-1 card" style="width:100px; ">
+    <img src="{{asset('images/salle2.jpg')}}" class="card-img-top" alt="..." style="height: 200px; ">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+
+  <div class="  col-md-3  offset-md-1   card" style="width:100px; ">
+    <img src="{{asset('images/salle3.jpg')}}" class="card-img-top" alt="..." style="height: 200px; ">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
