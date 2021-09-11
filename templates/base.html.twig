@@ -16,7 +16,7 @@
     <body>
      <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <a class="navbar-brand text-white" href="{{path('cinema')}}"><img src="{{asset('images/logo2.jpg')}}" alt="" style="height: 50px;width: 100px;"></a>
+                <a class="navbar-brand text-white" href="{{path('home')}}"><img src="{{asset('images/logo2.jpg')}}" alt="" style="height: 50px;width: 100px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -24,13 +24,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
-                      <a class="nav-link text-white" href="{{ path('cinema') }}">Acceuil <span class="sr-only">(current)</span></a>
+                      <a class="nav-link text-white" href="{{ path('home') }}">Acceuil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-white" href="{{ path('film') }}">Film</a>
+                      <a class="nav-link text-white" href="#">Film</a>
                     </li>
                      <li class="nav-item">
-                      <a class="nav-link text-white" href="{{ path('publicite') }}">Publicite</a>
+                      <a class="nav-link text-white" href="#">Publicite</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Actualités</a>
@@ -57,7 +57,7 @@
                   {% else %}
 
                    <li class="nav-item ">
-                    <a class="nav-link text-white" href="">Inscription <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-white" href="{{path('register')}}">Inscription <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white" href="">Connexion</a>
