@@ -27,6 +27,8 @@ class Admin
      */
     private $Password;
 
+    
+
     public function getId(): ?int
     {
         return $this->id;
@@ -55,4 +57,8 @@ class Admin
 
         return $this;
     }
+
+   
+
+   
 }
