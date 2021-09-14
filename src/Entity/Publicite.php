@@ -47,7 +47,7 @@ class Publicite
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $discription;
+    private $description;
 
     public function getId(): ?int
     {
@@ -114,14 +114,14 @@ class Publicite
         return $this;
     }
 
-    public function getDiscription(): ?string
+    public function getDescription(): ?string
     {
-        return $this->discription;
+        return $this->description;
     }
 
-    public function setDiscription(string $discription): self
+    public function setDescription(string $description): self
     {
-        $this->discription = $discription;
+        $this->description = $description;
 
         return $this;
     }

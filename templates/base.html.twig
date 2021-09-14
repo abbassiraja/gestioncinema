@@ -14,7 +14,15 @@
         {% endblock %}
     </head>
     <body>
-     <header>
+         <header>
+          <div class="w3-content w3-section" style="max-width:100%">
+           <img class="mySlides" src="{{ asset('css/slide/s1.jpg') }}" alt="image" style="height: 500px;width: 100%;">
+           <img class="mySlides" src="{{ asset('css/slide/s2.png') }}" alt="image" style="height: 500px;width: 100%;">
+           <img class="mySlides" src="{{ asset('css/slide/s3.png') }}" alt="image" style="height: 500px;width: 100%;">
+          </div>
+
+         
+  
             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <a class="navbar-brand text-white" href="{{path('home')}}"><img src="{{asset('images/logo2.jpg')}}" alt="" style="height: 50px;width: 100px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,6 +33,9 @@
                   <ul class="navbar-nav mx-auto">
                     <li class="nav-item active">
                       <a class="nav-link text-white" href="{{ path('home') }}">Acceuil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="{{ path('cinema_new')}}">Cinema</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link text-white" href="#">Film</a>
@@ -70,6 +81,16 @@
                 </div>
               </nav>
         </header>
-        {% block body %}{% endblock %}
+        {% block body %}
+         
+    
+        
+        
+        {% endblock %}
+
+        <script src="{{ asset('js/index.js')}}"></script>
+      <script src="{{ asset('js/bootstrap.bundle.min.js')}}"></script>
+      <script src="{{ asset('js/jquery-3.5.1.slim.min.js')}}"></script>
+      <script src="{{ asset('js/popper.min.js')}}"></script>  
     </body>
 </html>
